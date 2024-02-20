@@ -1,12 +1,12 @@
 # go-htmx
 **Seamless HTMX integration in golang applications.**
 
-[![GoDoc](https://pkg.go.dev/badge/github.com/donseba/go-htmx?status.svg)](https://pkg.go.dev/github.com/donseba/go-htmx?tab=doc)
-[![GoMod](https://img.shields.io/github/go-mod/go-version/donseba/go-htmx)](https://github.com/donseba/go-htmx)
-[![Size](https://img.shields.io/github/languages/code-size/donseba/go-htmx)](https://github.com/donseba/go-htmx)
+[![GoDoc](https://pkg.go.dev/badge/github.com/developersismedika/go-htmx?status.svg)](https://pkg.go.dev/github.com/developersismedika/go-htmx?tab=doc)
+[![GoMod](https://img.shields.io/github/go-mod/go-version/donseba/go-htmx)](https://github.com/developersismedika/go-htmx)
+[![Size](https://img.shields.io/github/languages/code-size/donseba/go-htmx)](https://github.com/developersismedika/go-htmx)
 [![License](https://img.shields.io/github/license/donseba/go-htmx)](./LICENSE)
-[![Stars](https://img.shields.io/github/stars/donseba/go-htmx)](https://github.com/donseba/go-htmx/stargazers)
-[![Go Report Card](https://goreportcard.com/badge/github.com/donseba/go-htmx)](https://goreportcard.com/report/github.com/donseba/go-htmx)
+[![Stars](https://img.shields.io/github/stars/donseba/go-htmx)](https://github.com/developersismedika/go-htmx/stargazers)
+[![Go Report Card](https://goreportcard.com/badge/github.com/developersismedika/go-htmx)](https://goreportcard.com/report/github.com/developersismedika/go-htmx)
 
 ## Description
 
@@ -27,7 +27,7 @@ It provides a set of tools to easily manage swap behaviors, trigger configuratio
 To install the htmx package, use the following command:
 
 ```sh
-go get -u github.com/donseba/go-htmx
+go get -u github.com/developersismedika/go-htmx
 ```
 
 ### Usage
@@ -40,8 +40,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/donseba/go-htmx"
-	"github.com/donseba/go-htmx/middleware"
+	"github.com/developersismedika/go-htmx"
+	"github.com/developersismedika/go-htmx/middleware"
 )
 
 type App struct {

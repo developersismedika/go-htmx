@@ -2,8 +2,7 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/donseba/go-htmx"
-	"github.com/donseba/go-htmx/middleware"
+	"github.com/developersismedika/go-htmx/middleware"
 	"io"
 	"log"
 	"net/http"

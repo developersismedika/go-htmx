@@ -3,8 +3,6 @@ package middleware
 import (
 	"context"
 	"net/http"
-
-	"github.com/donseba/go-htmx"
 )
 
 // MiddleWare is a middleware that adds the htmx request header to the context
