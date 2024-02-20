@@ -4,10 +4,11 @@
 package htmx
 
 import (
-	"log/slog"
 	"net/http"
 	"strings"
 	"time"
+
+	"go.uber.org/zap"
 )
 
 var (
@@ -18,24 +19,23 @@ var (
 )
 
 type (
-	Logger interface {
-		Warn(msg string, args ...any)
-	}
-
 	HTMX struct {
-		log Logger
+		log *zap.Logger
 	}
 )
 
 // New returns a new htmx instance.
 func New() *HTMX {
+	// prepares a basic logger
+	log, _ := zap.NewProduction(zap.WithCaller(false))
+
 	return &HTMX{
-		log: slog.Default().WithGroup("htmx"),
+		log: log,
 	}
 }
 
 // SetLog sets the logger for the htmx instance.
-func (h *HTMX) SetLog(log Logger) {
+func (h *HTMX) SetLog(log *zap.Logger) {
 	h.log = log
 }
 
