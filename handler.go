@@ -4,11 +4,13 @@ import (
 	"encoding/json"
 	"html/template"
 	"net/http"
+
+	"go.uber.org/zap"
 )
 
 type (
 	Handler struct {
-		log      Logger
+		log      *zap.Logger
 		w        http.ResponseWriter
 		r        *http.Request
 		request  HxRequestHeader
